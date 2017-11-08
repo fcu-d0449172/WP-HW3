@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<title>What Can Twitch Do?</title>
+<script type="text/javascript">
+  var cIn;
+  var cOut;
+  var fOut;
+  cIn=window.prompt("輸入攝氏溫度!!");
+  
+  cOut=parseInt(cIn);
+  document.writeln("<h1>所輸入的攝氏溫度為"+cOut+"</h1>");
+  document.writeln("<h1>換算後的華氏溫度為"+temperatureTransform(fOut)+"</h1>");
+  function temperatureTransform(x)
+  {
+    x=9/5*cOut+32;
+    return x;
+  }
+
+  </script>
+</body>
+</html>
